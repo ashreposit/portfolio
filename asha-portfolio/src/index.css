@@ -1,1 +1,18 @@
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
 @import "tailwindcss";
+@plugin "daisyui";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    transition: background-color 0.1s, color 0.1s;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+
+}

@@ -1,13 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { BrowserRouter as Router,Routes,Route} from "react-router-dom"
+import Body from "./Body"
 
 function App() {
 
   return (
-    <>
-      <p className='bg-amber-200 bg-auto text-blue-700'>Hello world</p>
-    </>
+    <div className="min-h-screen bg-white dark:bg-gray-900 text-black dark:text-white transition">
+      <Body />
+    </div>
   )
 }
 
