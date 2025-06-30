@@ -5,15 +5,17 @@ const skills = [
     "Express.js",
     "JavaScript",
     "TypeScript",
+    "MySQL",
     "PostgreSQL",
     "MongoDB",
     "AWS SES",
+    "AWS SNS",
     "AWS Lambda",
     "Docker",
+    "Angular",
     "React",
     "TailwindCss",
     "GraphQL",
-    "Angular",
     "CI/CD",
     "Sequelize"
 ];

@@ -37,9 +37,9 @@ const Body = () => {
           <Projects />
         </section>
 
-        <section className="sticky top-0 min-h-screen z-20 flex items-center justify-center bg-white dark:bg-gray-900">
+        {/* <section className="sticky top-0 min-h-screen z-20 flex items-center justify-center bg-white dark:bg-gray-900">
           <PersonalProjects />
-        </section>
+        </section> */}
 
         <section className="sticky top-0 min-h-screen z-30 flex items-center justify-center bg-white dark:bg-gray-900">
           <Skills/>
