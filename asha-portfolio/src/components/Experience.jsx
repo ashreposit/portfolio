@@ -2,6 +2,15 @@ import { motion } from "framer-motion";
 
 const experiences = [
     {
+        title: "Intern — Software Developer",
+        company: "Centizen Inc.",
+        period: "2023",
+        description: [
+            "Optimized relational schemas for 3+ backend modules using PostgreSQL, MySQL, and MongoDB, improving query performance by 35% and reducing response times by 30%",
+            "Built and documented 10+ RESTful APIs with Express.js and Swagger,achieving 90% unit test coverage using Jest and cutting production bugs by 30%",
+        ]
+    },
+    {
         title: "Software Engineer",
         company: "Centizen Inc.",
         period: "2023 — Present",
@@ -12,16 +21,7 @@ const experiences = [
             "Led the launch of ZenMail, used in 3+ production apps, centralizing email delivery and reducing redundancy.",
             "Scaled backend to handle 2M+ emails/month, optimizing bulk delivery and cutting failures by 95% via AWS SES event tracking",
         ]
-    },
-    {
-        title: "Intern — Software Developer",
-        company: "Centizen Inc.",
-        period: "2023",
-        description: [
-            "Optimized relational schemas for 3+ backend modules using PostgreSQL, MySQL, and MongoDB, improving query performance by 35% and reducing response times by 30%",
-            "Built and documented 10+ RESTful APIs with Express.js and Swagger,achieving 90% unit test coverage using Jest and cutting production bugs by 30%",
-        ],
-    },
+    }
 ];
 
 const Experience = () => {

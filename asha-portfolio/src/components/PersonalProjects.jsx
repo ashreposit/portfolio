@@ -3,24 +3,24 @@ import { useRef } from "react";
 
 const projects = [
   {
-    title: "ZenMail",
+    title: "DevTinder",
     description:
-      "High-volume backend service for transactional and marketing emails.ZenMail is a lightweight, independent SaaS-based email marketing platform designed for businesses, creators, and marketers to create, manage, and track email campaigns effortlessly. Built for simplicity and flexibility, ZenMail enables users to connect with their audience through personalized, targeted email communications — without relying on third-party marketing suites.",
-    tech: ["Node.js", "Express", "PostgreSQL","Angular", "AWS SES","AWS SNS","AWS Lambda","Docker","Kubernetes","Jenkins"],
-    link: "https://zenmail.centizenapps.com/",
-    github: "#",
+      "DevTinder is a polished, skill-focused networking app that blends tertiary features like swiping, chatting, profile showcase, and real-time backend integration into a learning-rich MERN project. It stands out as both a developer learning tool and a proof-of-concept for portfolio-driven social networking.",
+    tech: ["Node.js", "Express", "MongoDB", "AWS EC2","AWS S3","React","Tailwindcss","Vite","Nginx"],
+    link: "https://yoursite.com",
+    github: "https://github.com/ashreposit/devtinder-backend",
   },
   {
-    title: "ZenBasket",
+    title: "Portfolio Website",
     description:
-      "ZenBasket is a SaaS-based eCommerce platform that allows businesses and individual sellers to create and manage their own online stores without having to build the infrastructure from scratch.",
-    tech: ["Node.js", "Express.js", "PostgreSQL","Angular", "AWS S3","AWS EC2","Docker","Kubernetes","Jenkins"],
-    link: "https://dashboard.getzenbasket.com/",
-    github: "#",
+      "Personal developer portfolio built with React, Tailwind CSS, and Framer Motion animations.",
+    tech: ["React", "Vite","Tailwind CSS", "Framer Motion","mailjs"],
+    link: "/",
+    github: "https://github.com/ashreposit/portfolio",
   },
 ];
 
-const Projects = () => {
+const PersonalProjects = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -36,7 +36,7 @@ const Projects = () => {
       className="sticky top-0 min-h-screen z-30 flex flex-col px-6 py-20 bg-white dark:bg-gray-900"
     >
       <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
-        Projects I've Worked On
+        Personal Projects
       </h2>
 
       <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
@@ -73,6 +73,13 @@ const Projects = () => {
               >
                 Live
               </a>
+              <a
+                href={project.github}
+                target="_blank"
+                className="px-4 py-2 border border-gray-700 dark:border-gray-300 text-gray-800 dark:text-gray-200 rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+              >
+                Code
+              </a>
             </div>
           </motion.div>
         ))}
@@ -81,4 +88,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default PersonalProjects;

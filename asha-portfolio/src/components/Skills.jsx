@@ -9,6 +9,7 @@ const skills = [
     "MongoDB",
     "AWS SES",
     "AWS Lambda",
+    "Docker",
     "React",
     "TailwindCss",
     "GraphQL",

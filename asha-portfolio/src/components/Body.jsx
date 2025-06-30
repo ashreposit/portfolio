@@ -7,6 +7,7 @@ import Skills from "./Skills";
 import { useLayoutEffect, useState } from "react";
 import Experience from "./Experience";
 import ContactMe from "./ContactMe";
+import PersonalProjects from "./PersonalProjects";
 
 const Body = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -32,8 +33,12 @@ const Body = () => {
           <AboutMe />
         </section>
 
-        <section className="relative top-0 min-h-screen z-20 flex items-center justify-center bg-white dark:bg-gray-900">
+        <section className="sticky top-0 min-h-screen z-20 flex items-center justify-center bg-white dark:bg-gray-900">
           <Projects />
+        </section>
+
+        <section className="sticky top-0 min-h-screen z-20 flex items-center justify-center bg-white dark:bg-gray-900">
+          <PersonalProjects />
         </section>
 
         <section className="sticky top-0 min-h-screen z-30 flex items-center justify-center bg-white dark:bg-gray-900">
