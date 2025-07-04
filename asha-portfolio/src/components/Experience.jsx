@@ -13,7 +13,7 @@ const experiences = [
     {
         title: "Software Engineer",
         company: "Centizen Inc.",
-        period: "2023 — Present",
+        period: "2023 — 2025",
         description: [
             "Delivered 25+ scalable APIs for ZenBasket, enhancing email campaigns and admin tools, supporting 1,000+ store admins and ensuring 99.9% uptime.",
             "Improved service reliability with 35% faster query performance and 30% lower DB response time, maintaining 99.9% uptime.",

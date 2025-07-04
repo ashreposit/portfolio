@@ -29,15 +29,15 @@ const Body = () => {
       </div>
 
       <main>
-        <section className="relative top-0 min-h-screen z-10 flex items-center justify-center bg-white dark:bg-gray-900">
+        <section id="hero" className="relative top-0 min-h-screen z-10 flex items-center justify-center bg-white dark:bg-gray-900">
           <Hero />
         </section>
 
-        <section className="relative top-0 min-h-screen z-20 flex items-center justify-center bg-white dark:bg-gray-900">
+        <section id="about" className="relative top-0 min-h-screen z-20 flex items-center justify-center bg-white dark:bg-gray-900">
           <AboutMe />
         </section>
 
-        <section className="relative top-0 min-h-screen z-20 flex items-center justify-center bg-white dark:bg-gray-900">
+        <section id="projects" className="relative top-0 min-h-screen z-20 flex items-center justify-center bg-white dark:bg-gray-900">
           <Projects />
         </section>
 
@@ -45,15 +45,15 @@ const Body = () => {
           <PersonalProjects />
         </section> */}
 
-        <section className="relative top-0 min-h-screen z-30 flex items-center justify-center bg-white dark:bg-gray-900">
+        <section id="skills" className="relative top-0 min-h-screen z-30 flex items-center justify-center bg-white dark:bg-gray-900">
           <Skills />
         </section>
 
-        <section className="relative top-0 min-h-screen z-30 flex items-center justify-center bg-white dark:bg-gray-900">
+        <section id="experience" className="relative top-0 min-h-screen z-30 flex items-center justify-center bg-white dark:bg-gray-900">
           <Experience />
         </section>
 
-        <section className="relative top-0 min-h-screen z-30 flex items-center justify-center bg-white dark:bg-gray-900">
+        <section id="contact" className="relative top-0 min-h-screen z-30 flex items-center justify-center bg-white dark:bg-gray-900">
           <ContactMe />
         </section>
 
