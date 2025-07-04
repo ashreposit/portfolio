@@ -22,18 +22,22 @@ const Body = () => {
   }, [theme]);
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <NavBar theme={theme} setTheme={setTheme}/>
+    <div className="min-h-screen flex flex-col overflow-x-hidden">
+
+      <div className="sticky top-0 z-50">
+        <NavBar theme={theme} setTheme={setTheme} />
+      </div>
+
       <main>
-        <section className="sticky top-0 min-h-screen z-10 flex items-center justify-center bg-white dark:bg-gray-900">
+        <section className="relative top-0 min-h-screen z-10 flex items-center justify-center bg-white dark:bg-gray-900">
           <Hero />
         </section>
 
-        <section className="sticky top-0 min-h-screen z-20 flex items-center justify-center bg-white dark:bg-gray-900">
+        <section className="relative top-0 min-h-screen z-20 flex items-center justify-center bg-white dark:bg-gray-900">
           <AboutMe />
         </section>
 
-        <section className="sticky top-0 min-h-screen z-20 flex items-center justify-center bg-white dark:bg-gray-900">
+        <section className="relative top-0 min-h-screen z-20 flex items-center justify-center bg-white dark:bg-gray-900">
           <Projects />
         </section>
 
@@ -41,16 +45,16 @@ const Body = () => {
           <PersonalProjects />
         </section> */}
 
-        <section className="sticky top-0 min-h-screen z-30 flex items-center justify-center bg-white dark:bg-gray-900">
-          <Skills/>
+        <section className="relative top-0 min-h-screen z-30 flex items-center justify-center bg-white dark:bg-gray-900">
+          <Skills />
         </section>
 
         <section className="relative top-0 min-h-screen z-30 flex items-center justify-center bg-white dark:bg-gray-900">
-          <Experience/>
+          <Experience />
         </section>
 
-        <section className="sticky top-0 min-h-screen z-30 flex items-center justify-center bg-white dark:bg-gray-900">
-          <ContactMe/>
+        <section className="relative top-0 min-h-screen z-30 flex items-center justify-center bg-white dark:bg-gray-900">
+          <ContactMe />
         </section>
 
       </main>

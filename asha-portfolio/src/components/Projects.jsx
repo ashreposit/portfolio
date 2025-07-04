@@ -27,7 +27,9 @@ const Projects = () => {
     offset: ["start start", "end start"],
   });
 
-  const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
+  const isMobile = window.innerWidth <= 768;
+  const opacity = useTransform(scrollYProgress, [0, 1], isMobile ? [1, 1] : [1, 0]);
+  // const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
 
   return (
     <motion.section
